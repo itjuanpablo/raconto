@@ -71,6 +71,7 @@
 .floating-wpp .floating-wpp-popup.active .floating-wpp-message {
     opacity: 1;
     transition-delay: 0.2s;
+    color: black;
 }
 
 .floating-wpp .floating-wpp-popup .floating-wpp-head {
