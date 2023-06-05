@@ -37,9 +37,31 @@
   ======================================================== -->
   <!-- Scripts -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="text/javascript" src="/views/floating-whatsapp-master/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="/views/floating-whatsapp-master/floating-wpp.css">
+  <script type="text/javascript" src="/views/floating-whatsapp-master/floating-wpp.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '5491133359850',
+            popupMessage: 'Hello, how can we help you?',
+            message: "I'd like to order a pizza",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Welcome!',
+            headerColor: 'crimson',
+            backgroundColor: 'crimson',
+            buttonImage: '<img src="views/floating-whatsapp-master/whatsapp.svg" />'
+        });
+    });
+</script>
 </head>
 
 <body>
+
+  <!-- Pop-up -->
+  <div id="myButton"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
